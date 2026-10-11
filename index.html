@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Freight Checker</title>
+<title>Farncombe Freight Checker</title>
 
 <style>
 body {
@@ -52,22 +51,25 @@ input {
 
 button {
     border: 0;
-    background: #2563eb;
     color: white;
     font-weight: bold;
     cursor: pointer;
 }
 
-button:hover {
-    background: #1d4ed8;
+.rtt-button {
+    background: #0a2c33;
+}
+
+.rtt-button:hover {
+    background: #16434b;
 }
 
 .rail-record-button {
-    background: #059669;
+    background: #dd9933;
 }
 
 .rail-record-button:hover {
-    background: #047857;
+    background: #c78525;
 }
 
 small {
@@ -86,12 +88,12 @@ small {
 
     <input type="date" id="dateInput">
 
-    <button onclick="checkFreight()">
-        Check Freight Timetable
+    <button class="rtt-button" onclick="checkFreight()">
+        RTT
     </button>
 
     <button class="rail-record-button" onclick="checkRailRecord()">
-        Rail Record Live
+        Rail Record
     </button>
 
     <small>
@@ -141,4 +143,3 @@ function checkRailRecord() {
 </script>
 </body>
 </html>
-```
