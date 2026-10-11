@@ -56,6 +56,16 @@ button {
     cursor: pointer;
 }
 
+.shortcut-button {
+    background: #374151;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.shortcut-button:hover {
+    background: #4b5563;
+}
+
 .rtt-button {
     background: #0a2c33;
 }
@@ -82,6 +92,12 @@ small {
 
 <body>
 <div class="card">
+
+    <button
+        class="shortcut-button"
+        onclick="addShortcut()">
+        Add Shortcut To Site
+    </button>
 
     <h1>Farncombe Train Checker</h1>
     <p>Select a date</p>
@@ -112,6 +128,11 @@ const mm = String(today.getMonth() + 1).padStart(2, "0");
 const dd = String(today.getDate()).padStart(2, "0");
 
 dateInput.value = `${yyyy}-${mm}-${dd}`;
+
+function addShortcut() {
+    window.location.href =
+        "https://conditionshare.base44.app/r/oRXfSWK";
+}
 
 function checkFreight() {
     const date = dateInput.value;
